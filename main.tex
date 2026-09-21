@@ -1,0 +1,289 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% CV Dominik Harmim 09/2023 %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt, a4paper, academicons]{altacv}
+
+% Layout
+\geometry{left=1cm, right=9cm, marginparwidth=6.8cm, marginparsep=1.2cm, top=1cm, bottom=1cm, footskip=2 \baselineskip}
+
+% Packages
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage[hidelinks]{hyperref}
+
+% Colours
+\definecolor{accent}{HTML}{000E17}
+\definecolor{heading}{HTML}{3170CE}
+\definecolor{emphasis}{HTML}{696969}
+\definecolor{body}{HTML}{000000}
+
+\colorlet{heading}{heading}
+\colorlet{accent}{accent}
+\colorlet{emphasis}{emphasis}
+\colorlet{body}{body}
+
+\newcommand{\hrefd}[1]{\href{#1}{#1}}
+
+
+\begin{document}
+
+
+\name{Dominik Harmim}
+\tagline{}
+\photo{2.5cm}{photo.jpeg}
+\personalinfo{%
+    \printinfo{\faBirthdayCake}{29th May 1997}
+    \email{harmim6@gmail.com}
+    \emailsec{dominik.harmim@oracle.com}
+    \phone{+420 773 001 653}
+    \location{Brno, Czechia}
+    \github{harmim}{https://github.com/harmim}
+    \linkedin{dominik-harmim}{https://www.linkedin.com/in/dominik-harmim}
+    \homepage{https://www.harmim.cz}%
+    % \scholar{https://scholar.google.com/citations?user=NFR_z84AAAAJ}
+    % \orcid{0000-0002-0679-2163}{https://orcid.org/0000-0002-0679-2163}
+}
+
+\begin{fullwidth}
+    \makecvheader
+\end{fullwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experience %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection[sidebar1]{Experience}
+
+\cvevent
+{Principal AI Engineer\,---\,Team Lead}
+{Oracle NetSuite Foundation AI Services}
+{Dec 2025--Present}
+{Brno, Czechia}
+\medskip
+
+\cvevent
+{Principal Software Engineer}
+{Oracle NetSuite AI}
+{Sep 2024--Nov 2025}
+{Brno, Czechia}
+\medskip
+
+\cvevent
+{Trainer}
+{Software Development Academy}
+{Jan 2025--Aug 2025}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] Trainer in IT courses, mainly Data Science, AI Engineering, and Python.
+\end{itemize}
+\smallskip
+
+\cvevent
+{Senior Software Engineer}
+{Oracle NetSuite AI}
+{Jan 2024--Oct 2024}
+{Brno, Czechia}
+\smallskip
+
+\cvevent
+{Software Development Engineer}
+{Amazon}
+{Oct 2022--Apr 2023}
+{Dresden, Saxony, Germany}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] Software development engineer intern in the Kernel and Operating Systems Security team at Amazon Web Services (AWS).
+\end{itemize}
+\medskip
+
+\cvevent
+{Research Assistant}
+{Faculty of Information Technology, Brno University of Technology}
+{Feb 2019--Sep 2023}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] Work in the automated analysis and verification research group\,---\,VeriFIT.
+
+    \item[--] Development of a~static analyser as a~module of the Facebook Infer tool.
+\end{itemize}
+\medskip
+
+\cvevent
+{PHP Developer}
+{PeckaDesign}
+{Jul 2015--Jul 2021}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{0.5em}\small
+    \item[--] Development of ecommerce systems.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Publications %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Publications}
+
+\cvevent
+{Static Deadlock Detection in Low-Level C Code}
+{Proceedings of EUROCAST'22}
+{February 2023}
+{Las Palmas de Gran Canaria, Spain}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] \hrefd{https://arxiv.org/abs/2207.01948}
+    \item[--]
+        \hrefd{https://link.springer.com/chapter/10.1007/978-3-031-25312-6\_31}
+\end{itemize}
+\medskip
+
+\cvevent
+{Advanced Static Analysis of Atomicity in Concurrent Programs through Facebook Infer}
+{Master's Thesis at FIT BUT}
+{May 2021}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] \hrefd{https://www.fit.vut.cz/study/thesis/24185}
+\end{itemize}
+\medskip
+
+\cvevent
+{Advanced Static Analysis of Atomicity in Concurrent Programs through Facebook Infer}
+{Excel@FIT 2021 Conference Paper}
+{Apr 2021}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] \hrefd{http://excel.fit.vutbr.cz/submissions/2021/057/57.pdf}
+\end{itemize}
+\medskip
+
+\cvevent
+{Static Analysis Using Facebook Infer to Find Atomicity Violations}
+{Bachelor's Thesis at FIT BUT}
+{May 2019}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] \hrefd{https://www.fit.vut.cz/study/thesis/21689}
+\end{itemize}
+\medskip
+
+\cvevent
+{Scalable Static Analysis Using Facebook Infer}
+{Excel@FIT 2019 Conference Paper}
+{Apr 2019}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] \hrefd{http://excel.fit.vutbr.cz/submissions/2019/059/59.pdf}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Projects %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Projects}
+
+\cvevent
+{Atomer: Atomicity Violations Analyser}
+{Facebook Infer Plugin\,---\,\hrefd{https://github.com/harmim/infer}}
+{Sep 2018--Sep 2023}
+{}
+\medskip
+
+\cvevent
+{David Harmim\,---\,Fitness Trainer}
+{Personal Website Development\,---\,\hrefd{https://david.harmim.cz}}
+{May 2017--Present}
+{}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] Development of a~personal website for fitness trainer David Harmim.
+\end{itemize}
+\medskip
+
+\cvevent
+{DJ The-B}
+{Personal Website Development\,---\,\hrefd{http://www.djtheb.cz}}
+{May 2015--Present}
+{}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] Development of a~personal website for DJ The-B.
+\end{itemize}
+\medskip
+
+\cvevent
+{Anis Box Fotokoutek}
+{Website Development\,---\,\hrefd{http://www.anisbox.cz}}
+{Sep 2020--Present}
+{}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] Development of a~website for Anis Box.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Awards %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection[sidebar2]{Honours \& Awards}
+
+\cvevent
+{Brno Ph.D. Talent 2021\,---\,Scholarship Beneficiar}
+{JCMM,~z.~s.~p.~o.}
+{Jan 2022}
+{Brno, Czechia}
+
+\cvevent
+{IT SPY\,---\,One of the Top 10~MSc Theses of 2021 at FIT BUT}
+{IT SPY, Czech and Slovak ACM Chapter}
+{Sep 2021}
+{Brno, Czechia}
+
+\cvevent
+{Dean's Award for Excellent Master's Thesis}
+{Brno University of Technology, Faculty of Information Technology}
+{Jun 2021}
+{Brno, Czechia}
+
+\cvevent
+{Excel@FIT 2021\,---\,Expert Committee Award}
+{Brno University of Technology, Faculty of Information Technology}
+{May 2021}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] Expert Committee Award at the Excel@FIT 2021 conference for significant improvement of a~tool for verifying atomicity of operations in parallel programs.
+\end{itemize}
+\medskip
+
+\cvevent
+{Excel@FIT 2021\,---\,The Award of Ji\v{r}\'{i} Kunovsk\'{y}}
+{Brno University of Technology, Faculty of Information Technology}
+{May 2021}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] The Award of Ji\v{r}\'{i} Kunovsk\'{y} at the Excel@FIT 2021 conference for excellent work and its presentation.
+\end{itemize}
+\medskip
+
+\cvevent
+{Dean's Award for Excellent Bachelor's Thesis}
+{Brno University of Technology, Faculty of Information Technology}
+{Jun 2019}
+{Brno, Czechia}
+
+\cvevent
+{Excel@FIT 2019\,---\,Expert Committee Award}
+{Brno University of Technology, Faculty of Information Technology}
+{Apr 2019}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] Expert Committee Award at the Excel@FIT 2019 conference for a~significant and practically useful contribution to static analysis in the Facebook Infer tool.
+\end{itemize}
+\medskip
+
+\cvevent
+{Excel@FIT 2019\,---\,The Award of Ji\v{r}\'{i} Kunovsk\'{y}}
+{Brno University of Technology, Faculty of Information Technology}
+{Apr 2019}
+{Brno, Czechia}
+\begin{itemize}\setlength{\itemindent}{.5em}\small
+    \item[--] The Award of Ji\v{r}\'{i} Kunovsk\'{y} at the Excel@FIT 2019 conference for excellent work and its presentation.
+\end{itemize}
+\medskip
+
+\cvevent
+{PHP Applications Security}
+{Michal \v{S}pa\v{c}ek}
+{Mar 2016}
+{Brno, Czechia}
+
+
+\end{document}
