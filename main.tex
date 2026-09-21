@@ -26,6 +26,12 @@
 
 \newcommand{\hrefd}[1]{\href{#1}{#1}}
 
+% The system-wide FontAwesome.otf (from TeX Live) lacks Microsoft-platform
+% name records, which makes macOS's Core Text reject it outright, so
+% \faicon glyphs silently render as nullfont. Load the vendored,
+% patched copy (fonts/FontAwesome.otf) by explicit path instead.
+\renewcommand{\FA}{\fontspec[Path=./fonts/,Extension=.otf]{FontAwesome}}
+
 
 \begin{document}
 
